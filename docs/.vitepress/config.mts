@@ -29,6 +29,8 @@ export default withMermaid({
         items: [
           { text: 'Plano, checklist e diário', link: '/pratica/modelos' },
           { text: 'Diário de bordo (planilha)', link: '/pratica/diario-bordo' },
+          { text: 'Validação e operação', link: '/pratica/validacao-operacional' },
+          { text: 'Publicar nova versão', link: '/implantacao/publicar-versao' },
           { text: 'Glossário essencial', link: '/referencias/glossario' },
           { text: 'Fontes e revisão', link: '/referencias/fontes' }
         ]

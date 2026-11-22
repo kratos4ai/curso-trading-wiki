@@ -15,7 +15,8 @@ Confira [aula 1.3](../modulo-01/1-3-conta-demo.md),
 :::
 
 ::: tip Controle de bordo
-Use o [Diário de bordo](diario-bordo.md) e baixe a
+Use o [Diário de bordo](diario-bordo.md) e consulte o roteiro de
+[validação e operação](validacao-operacional.md). Baixe a
 <a href="/pratica/diario-bordo.xlsx" download>planilha XLSX com cálculos automáticos</a>. Ela será reutilizada em
 todos os módulos; esta página continua sendo a referência de campos e gates.
 :::

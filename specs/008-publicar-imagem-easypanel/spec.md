@@ -6,7 +6,8 @@ Data: 2026-11-21 | Estado: consolidada
 
 Publicar automaticamente a imagem Docker já definida no `Dockerfile` no GitHub
 Container Registry (GHCR), usando o `GITHUB_TOKEN`, para que o EasyPanel possa
-instalar a wiki por uma referência de imagem estável.
+instalar e atualizar a wiki por uma referência de imagem estável. A URL pública
+de conferência é `https://trading-agent-curso-trading.hkjpsr.easypanel.host/`.
 
 ## Pareto e limites
 
@@ -43,6 +44,6 @@ adicional.
 - Adicionar workflow acionado por `main`, tags `v*` e execução manual.
 - Manter o workflow de validação separado.
 - Aceite: YAML válido, permissão `packages: write`, build usa o `Dockerfile` da raiz
-  e o README descreve o EasyPanel.
+  e a Wiki documenta o ciclo de atualização até a URL pública.
 
 **Assinatura de papel:** Rafael, Helena, Camila, Lucas e Diego.

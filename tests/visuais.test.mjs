@@ -45,7 +45,7 @@ async function sourceAndBuiltPages() {
 
 test('toda página autoral tem visual relevante e instrução Como ler', async () => {
   const pages = await sourceAndBuiltPages()
-  assert.equal(pages.length, 22, 'o inventário autoral esperado mudou; revise a Spec')
+  assert.equal(pages.length, 24, 'o inventário autoral esperado mudou; revise a Spec')
   for (const page of pages) {
     const blocks = visualBlocks(page.markdown)
     assert.ok(blocks.length > 0, `${page.relativeSource} não tem Mermaid ou imagem`) 

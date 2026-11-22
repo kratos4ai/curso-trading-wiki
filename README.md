@@ -77,6 +77,9 @@ O workflow [`docker-image.yml`](.github/workflows/docker-image.yml) constrói o
 branch `main` ou uma tag `v*` é enviada. O GitHub guarda o código no repositório;
 o EasyPanel instala a imagem publicada no GHCR.
 
+O roteiro operacional completo está em
+[Publicar nova versão e atualizar a Wiki](docs/implantacao/publicar-versao.md).
+
 Depois do primeiro push, use no EasyPanel:
 
 ```text

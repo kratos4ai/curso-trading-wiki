@@ -6,3 +6,4 @@
 - [x] T004 [P0] [Helena] Escrever instrução curta para o EasyPanel.
 - [x] T005 [P1] [Lucas] Diferenciar código GitHub de imagem GHCR no README.
 - [x] T006 [P0] [Diego] Validar YAML e integrar a documentação.
+- [x] T007 [P0] [Diego] Registrar o procedimento de atualização e a URL pública.

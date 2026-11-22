@@ -12,6 +12,8 @@ const pages = [
   'trilha.html',
   'pratica/modelos.html',
   'pratica/diario-bordo.html',
+  'pratica/validacao-operacional.html',
+  'implantacao/publicar-versao.html',
   'referencias/glossario.html',
   'referencias/fontes.html',
   'modulo-01/index.html',
@@ -48,6 +50,13 @@ test('o build entrega páginas em português, navegação e página 404', async 
   assert.equal(diary[0], 0x50, 'XLSX publicado não começa com assinatura ZIP')
   assert.equal(diary[1], 0x4b, 'XLSX publicado não começa com assinatura ZIP')
   assert.ok(diary.length > 5000, 'XLSX do Diário de bordo está vazio ou incompleto')
+  const operations = await readFile(join(dist, 'implantacao/publicar-versao.html'), 'utf8')
+  assert.match(operations, /ghcr\.io\/kratos4ai\/curso-trading-wiki:latest/)
+  assert.match(operations, /trading-agent-curso-trading\.hkjpsr\.easypanel\.host/)
+  assert.match(operations, /Checklist de validação em camadas/)
+  const beginner = await readFile(join(dist, 'pratica/validacao-operacional.html'), 'utf8')
+  assert.match(beginner, /Antes de começar/)
+  assert.match(beginner, /Palavras que você verá/)
 })
 
 test('callouts e o componente Mermaid fazem parte do artefato publicado', async () => {
@@ -75,6 +84,8 @@ test('a busca publicada encontra checklist e indexa todas as páginas do curso',
   const data = JSON.parse(serialized)
   const indexedPaths = new Set(Object.values(data.documentIds).map((id) => id.split('#')[0]))
   for (const route of ['/', '/comece-aqui', '/trilha', '/pratica/modelos', '/pratica/diario-bordo',
+    '/pratica/validacao-operacional',
+    '/implantacao/publicar-versao',
     '/referencias/glossario', '/referencias/fontes', '/modulo-01/',
     '/modulo-01/1-1-terreno-usd', '/modulo-01/1-2-mt5-essencial',
     '/modulo-01/1-3-conta-demo', '/modulo-01/1-4-ordem-mercado',
