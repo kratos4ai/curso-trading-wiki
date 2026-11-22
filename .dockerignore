@@ -1,0 +1,10 @@
+**
+!package.json
+!package-lock.json
+!docs/
+!docs/**
+!docker/
+!docker/nginx.conf
+docs/.vitepress/cache/
+docs/.vitepress/dist/
+docs/.vitepress/.temp/
